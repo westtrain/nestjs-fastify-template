@@ -2,14 +2,14 @@
 
 ## Stack
 
-HTTP server: Fastify
-Framework: NestJS
-Database: MongoDB
-Object Data Modeling: Mongoose
-Language: TypeScript, JavaScript
+- HTTP server: Fastify
+- Framework: NestJS
+- Database: MongoDB
+- Object Data Modeling: Mongoose
+- Language: TypeScript, JavaScript
 
 ## Directory structure
-
+```
 my-app/
 ├── src/
 │ ├── app.module.ts # 애플리케이션의 루트 모듈
@@ -28,7 +28,6 @@ my-app/
 │ │ ├── coupon.schema.ts # 쿠폰 MongoDB 스키마 정의
 │ ├── infra/ # 환경 설정 관련
 │ │ ├── database.module.ts # 데이터베이스 모듈 및 설정
-│ │ ├── swagger.ts # Swagger 설정
 │ ├── request/ # 외부 서비스 호출 로직 관련
 │ │ ├── scooter.service.ts # Scooter 서버 호출 로직
 │ ├── common/ # 공통 유틸 및 인터셉터 등
@@ -40,7 +39,7 @@ my-app/
 ├── package.json # 프로젝트 종속성 및 스크립트 정의
 ├── tsconfig.json # TypeScript 설정 파일
 └── README.md # 프로젝트 설명 파일
-
+```
 ## 각 모듈 내에서 컨틀롤러 위치
 
 위 구조에서 컨트롤러들은 각 기능별 모듈 디렉토리에 위치합니다. 예를 들어, 사용자 관련 컨트롤러는 src/user/user.controller.ts에 위치하게 됩니다.
