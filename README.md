@@ -12,29 +12,29 @@
 ```
 my-app/
 ├── src/
-│ ├── app.module.ts # 애플리케이션의 루트 모듈
-│ ├── main.ts # 애플리케이션의 엔트리 포인트
-│ ├── user/ # 사용자(User) 관련 모듈
-│ │ ├── user.module.ts # 사용자 모듈 정의
-│ │ ├── user.controller.ts # 사용자 컨트롤러 정의
-│ │ ├── user.service.ts # 사용자 서비스 정의
-│ │ ├── user.repository.ts # 사용자 리포지토리 정의
-│ │ ├── user.schema.ts # 사용자 MongoDB 스키마 정의
-│ ├── coupon/ # 쿠폰 관련 모듈 (예시)
-│ │ ├── coupon.module.ts # 쿠폰 모듈 정의
-│ │ ├── coupon.controller.ts # 쿠폰 컨트롤러 정의
-│ │ ├── coupon.service.ts # 쿠폰 서비스 정의
-│ │ ├── coupon.repository.ts # 쿠폰 리포지토리 정의
-│ │ ├── coupon.schema.ts # 쿠폰 MongoDB 스키마 정의
-│ ├── infra/ # 환경 설정 관련
-│ │ ├── database.module.ts # 데이터베이스 모듈 및 설정
-│ ├── request/ # 외부 서비스 호출 로직 관련
-│ │ ├── scooter.service.ts # Scooter 서버 호출 로직
-│ ├── common/ # 공통 유틸 및 인터셉터 등
-│ │ ├── util/
-│ │ │ ├── calculateTime.ts # 시간 계산 유틸
-│ │ ├── interceptors/
-│ │ ├── filters/
+│   ├── app.module.ts # 애플리케이션의 루트 모듈
+│   ├── main.ts # 애플리케이션의 엔트리 포인트
+│   ├── user/ # 사용자(User) 관련 모듈
+│   │   ├── user.module.ts # 사용자 모듈 정의
+│   │   ├── user.controller.ts # 사용자 컨트롤러 정의
+│   │   ├── user.service.ts # 사용자 서비스 정의
+│   │   ├── user.repository.ts # 사용자 리포지토리 정의
+│   │   ├── user.schema.ts # 사용자 MongoDB 스키마 정의
+│   ├── coupon/ # 쿠폰 관련 모듈 (예시)
+│   │   ├── coupon.module.ts # 쿠폰 모듈 정의
+│   │   ├── coupon.controller.ts # 쿠폰 컨트롤러 정의
+│   │   ├── coupon.service.ts # 쿠폰 서비스 정의
+│   │   ├── coupon.repository.ts # 쿠폰 리포지토리 정의
+│   │   ├── coupon.schema.ts # 쿠폰 MongoDB 스키마 정의
+│   ├── infra/ # 환경 설정 관련
+│   │   ├── database.module.ts # 데이터베이스 모듈 및 설정
+│   ├── request/ # 외부 서비스 호출 로직 관련
+│   │   ├── scooter.service.ts # Scooter 서버 호출 로직
+│   ├── common/ # 공통 유틸 및 인터셉터 등
+│   │   ├── util/
+│   │   │   ├── calculateTime.ts # 시간 계산 유틸
+│   │   ├── interceptors/
+│   │   ├── filters/
 ├── node_modules/ # NPM 패키지
 ├── package.json # 프로젝트 종속성 및 스크립트 정의
 ├── tsconfig.json # TypeScript 설정 파일
